@@ -4,7 +4,6 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-  Exclusion,
 } from 'typeorm';
 
 @Entity('categories')

@@ -14,7 +14,7 @@ interface TransactionDTO {
   title: string;
   type: 'income' | 'outcome';
   value: number;
-  category: { title: string };
+  category: string;
 }
 
 class ImportTransactionsService {
@@ -45,7 +45,7 @@ class ImportTransactionsService {
             title,
             type,
             value,
-            category: { title: category },
+            category,
           });
         })
         .on('error', () => {
