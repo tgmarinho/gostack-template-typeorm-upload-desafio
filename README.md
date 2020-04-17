@@ -22,6 +22,7 @@
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -31,6 +32,14 @@
 Nesse desafio, você deve continuar desenvolvendo a aplicação de gestão de transações, treinando o que você aprendeu até agora no Node.js junto ao TypeScript, mas dessa vez incluindo o uso de banco de dados com o TypeORM e envio de arquivos com o Multer!
 
 Essa será uma aplicação que deve armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações, além de permitir a geração de relatórios a partir do envio de um arquivo csv.
+
+## Como executar
+
+1. Faça o clone do projeto na sua máquina;
+2. Na raiz do projeto, execute o comando `yarn` para baixar as dependências;
+3. Execute `yarn test` para rodar os testes;
+4. Execute `yarn dev:server` para rodar o projeto;
+5. Abra o Insomnia para testar as rotas `transactions` com os métodos `POST`,`GET` e `DELETE`, e testa a rota `/transactions/import` para importar o arquivo que está na pasta `src/__tests__/import_template.csv`, deixe como MultipartForm, adicione o atributo: `file` com o arquivo `import_template.csv`.
 
 ### Template da aplicação
 
